@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Online IDE</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+   
+ 
+    
+ <div class="header"><h1 align="center">ONLINE IDE</h1> </div>
+ 
+  <div class="control-panel">
+ 
+    <tr>
+        
+Language:
+        <select id="languages" class="languages" onchange="changeLanguage()">
+            <option value="c"> C </option>
+            <option value="cpp"> C++ </option>
+            <option value="python"> Python </option>
+            <option value="node"> Node JS </option>
+            <option value="php"> PHP </option>
+            <option value="ruby"> Ruby </option>
+        </select>
+    </div>
+
+    <div class="editor" id="editorid"></div>
+
+
+    
+  <div class="button-container">
+
+         <input id="fileid"  type="file" style="display: none;" >
+         
+         <button  type="button" button class="openbtn"  onclick="document.getElementById('fileid').click();"/>
+         <span class="openbtn--text">Open</span>
+         <span class="openbtn--icon">
+          <ion-icon name="document"></ion-icon>
+        </span> 
+      </button>       
+        &nbsp;
+        &nbsp;
+
+
+         <!-- <button class="loadfbtn" onclick="exeloadFile()">
+          <span class="loadfbtn--text">load file</span>                // not working 
+          <span class="loadfbtn--icon">
+            <ion-icon name="sync"></ion-icon>
+          </button> -->
+        
+          
+        &nbsp;
+        &nbsp;
+    
+     <!-- <input type="text" id="inputFileNameToSaveAs1"></input> -->
+     <button type="button" class="saveAsbtn" onclick="saveTextAsFile()">
+        <span class="saveAsbtn--text">save.As</span>
+        <span class="saveAsbtn--icon">
+          <ion-icon name="download"></ion-icon>
+       </span>
+        </button>
+       
+
+     &nbsp;
+     &nbsp;
+
+      <button type="button" class="runbtn" onclick="executeCode()"> 
+            <span class="runbtn--text">Run</span>
+            <span class="runbtn--icon">
+               <ion-icon name="play"></ion-icon>
+           </span>
+        </button>  
+  </div>
+
+
+    <div class="output"></div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://github.com/eligrey/FileSaver.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-monokai.js"></script>
+    <script src="js/ide.js"></script>
+    <script src="js/lib/FileSaver.js"></script>
+   
+    
+</body>
+</html>

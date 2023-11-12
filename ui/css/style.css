@@ -1,0 +1,153 @@
+*{margin: 0;}
+
+.header {
+    background: #57a958;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 4px;
+    font-family: sans-serif;
+
+}
+.control-panel {
+    background: rgb(151, 235, 221); 
+    text-align:center;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.languages {
+    background: rgba(156, 240, 208, 0.808);
+      text-align:center;
+    border: 1px solid rgb(159, 243, 218);
+} 
+
+#editorid {
+    height:500px;
+  min-height: 500px; 
+     width:auto;
+    min-width:1500px;
+   /* -webkit-writing-mode: horizontal-tb !important; /*some warning:/ */
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    /*cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;      there are really not needed....
+*/
+    padding: 2px;
+    border-radius: 2px;     
+}   
+
+.button-container {
+    background: #ebebeb;
+    text-align:center;
+    padding: 4px;  
+}
+.openbtn{
+    display: inline-flex;
+    background: #dee4e1;
+    padding:0;
+    color: rgb(7, 6, 6);
+    border: 0;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.openbtn:hover{
+    background-color: rgb(190, 194, 193);
+}
+.openbtn:active{
+    background-color: rgb(253, 255, 253);
+} 
+
+.loadfbtn{
+        display: inline-flex;
+        background: #dee4e1;
+        padding:0;
+        color: rgb(7, 6, 6);
+        border: 0;
+        outline: none;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .loadfbtn:hover{
+        background-color: rgb(190, 194, 193);
+    }
+    .loadfbtn:active{
+        background-color: rgb(253, 255, 253);
+    } 
+.saveAsbtn{
+        display: inline-flex;
+        background: #dee4e1;
+        padding:0;
+        color: rgb(7, 6, 6);
+        border: 0;
+        outline: none;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .saveAsbtn:hover{
+        background-color: rgb(190, 194, 193);
+    }
+    .saveAsbtn:active{
+        background-color: rgb(253, 255, 253);
+    } 
+    .saveAsbtn--text,
+    .saveAsbtn--icon{
+        display:inline-flex;
+        align-items:center;
+        padding: 0 4px;
+    }
+
+
+.runbtn {
+        display: inline-flex;
+        background: #dee4e1;
+        padding:4px;
+        color: rgb(7, 6, 6);
+        border: 0;
+        outline: none;
+        overflow: hidden; 
+        cursor: pointer;
+    }
+    .runbtn:hover{
+        background-color: rgb(185, 245, 232);
+    }
+    .runbtn:active{
+        background-color: rgb(248, 248, 248);
+    }
+    .runbtn--text,
+    .runbtn--icon{
+        display:inline-flex;
+        align-items:center;
+        padding: 0 2px;
+    }
+    
+
+.output {
+        padding: 4px;
+        border: 2px solid rgba(250, 250, 250, 0.979);
+        min-height: 100px;
+        width: 99%;
+        resize: none;
+
+}
